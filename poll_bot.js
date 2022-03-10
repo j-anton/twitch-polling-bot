@@ -328,7 +328,7 @@ function getVote(vote, msg){
 
 function plotPoll(){
 
-    var plotly = require('plotly')('sudo_jack', 'Ti9IYXBl3QjU9DU5nVHH')
+    var plotly = require('plotly')('YOURNAME', 'YOURKEY[-'')
 
     var trace = {
         x: poll.resultsx,
