@@ -11,14 +11,15 @@ Todo: take user defined parameters and store them/load them between runs.
     etc. 
 */
 const tmi = require('tmi.js');
+require('dotenv').config();
 
 
 // Define configuration options
 const opts = {
     options: { debug: true },
     identity: {
-       username: "SUPER_POLL_BOT",
-        password: "YOURAUTHTOKEN"
+       username: process.env.BOT_USERNAME,
+        password: process.env.OAUTH_TOKEN
     },
     channels: [
         'YOURCHANNELHERE',
